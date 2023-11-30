@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'otp-screen',
     loadChildren: () => import('./otp-screen/otp-screen.module').then( m => m.OtpScreenPageModule)
   },
+  {
+    path: 'resetpassword',
+    loadChildren: () => import('./resetpassword/resetpassword.module').then( m => m.ResetpasswordPageModule)
+  },
 
 ];
 
