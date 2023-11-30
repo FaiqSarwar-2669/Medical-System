@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>tab2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main">
+    <div class="heading">
+      <div>
+        <ion-icon name="arrow-back-outline" class="arrow"></ion-icon>
+      </div>
+      <div>
+        <h6>Fill your Profile</h6>
+      </div>
+    </div>
+    <div class="image">
+      <div class="img"></div>
+    </div>
+    <div class="pen">
+      <i class="fa-solid fa-pen"></i>
+    </div>
+    <div>
+      <div class="input-box">
+        <input class="text" type="text" name="text" placeholder="FullName" required>
+      </div>
+      <div class="input-box">
+        <input class="text" name="text" placeholder="NickName" required>
+      </div>
+      <div class="input-box">
+        <input class="text" type="date" name="date" required>
+      </div>
+      <div class="input-box">
+        <input class="text" type="email" name="email" placeholder="Email" required>
+      </div>
+      <div>
+        <select name="gender" class="Gender" required>
+          <option value="" disabled selected>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <button class="btn">continue</button>
+    </div>
+  </div>
+
+</ion-content>

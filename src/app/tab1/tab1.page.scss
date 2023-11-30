@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color:white;
+    padding: 20px;
+}
+.text{
+    position: relative;
+    top: -15px;
+}
+.facebook-icon{
+    color: #1877f2;
+    font-size: 30px;
+    position: relative;
+    right: 40% ;
+    top: 15px;
+}
+.logo-google{
+    position: relative;
+    right: 40%;
+    top: 15px;
+}
+.google-logo{
+    background-image: url('../../assets/google.png');
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-size: 100% 100%;
+    margin-right: 80%;
+    top: 15px;
+    
+}
+
+.logo-apple{
+   font-size: 30px;
+    position: relative;
+    right: 40% ;
+    top: 10px;
+}
+h2{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.btn{
+    padding: 10px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+    border: 1px solid rgb(220, 218, 218);
+}
+.second{
+    width: 100%;  
+}
+
+hr{
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+  }
+.head{
+  width: 30px;
+  background-color: white;
+  position: relative;
+  top: -36px;
+}
+.line{
+    margin-top: 40px;
+    margin-left: 4vw;
+    width: 90%;
+  }
+h5,h6{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    font-size:15px;
+}
+.btn-container{
+    padding: 10px;
+    width: 100%;
+}
+.btn1{
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  background-color: blue;
+}
+.second-btn{
+    display: flex;
+    justify-content: center;
+}
+.image{
+    background-image: url('../../assets/logo.png');
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+  }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.signup{
+    margin-top: 10%;
+    font: 30px;
+}
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h4{
+    display: block;
+    text-align: center;
+}

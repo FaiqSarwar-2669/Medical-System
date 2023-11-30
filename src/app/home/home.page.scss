@@ -1,27 +1,117 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+*{
   margin: 0;
+  padding: 0;
 }
+.main-div{
+  padding: 10px;  
+}
+.form
+{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 
-#container a {
-  text-decoration: none;
+}
+.btn{
+  border-radius: 50px;
+  padding: 20px;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+}
+.text{
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 4px 30px;
+}
+.mail-icon{
+  position: relative;
+  font-size: 20px;
+  top: 30px;
+  left: 8px;
+}
+.container{
+  justify-content: center;
+  display: flex;
+  gap: 40px;
+}
+Button ion-icon {
+  font-size: 40px;
+
+}
+.logo{
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+h2,h5,h6 {
+  color: black;
+  text-align: center;
+}
+.input-box {
+  border-radius: 100px;
+  font-size: 10px;
+  color: black;
+  width: 100%;
+}
+.checkbox{
+  margin-bottom: 20px;
+}
+.image{
+  background-image: url('../../assets/logo.png');
+  width: 200px;
+  height: 200px;
+  background-size: 100% 100%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lock-icon{
+  position: relative;
+  font-size: 20px;
+  top: 30px;
+  left: 8px;
+}
+.eye-icon{
+  position: relative;
+  font-size: 20px;
+  float: right;
+  transform: translateY(-28px);
+  right: 8px;
+}
+.facebook-icon{
+  color: #1877f2;
+}
+.google-logo{
+  background-image: url('../../assets/google.png');
+  height: 35px;
+  width: 35px;
+  background-size: 100% 100%;
+}
+hr{
+  border-top: 2px solid #ccc;
+  margin: 20px 0;
+}
+.line{
+  margin-top: 40px;
+  margin-left: 4vw;
+  width: 90%;
+}
+.heading-content{
+  width: 40%;
+  background-color: white;
+  position: relative;
+  top: -30px;
+}
+.head{
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

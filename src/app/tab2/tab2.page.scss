@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    padding: 10%;  
+  }
+.man-icon{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    color:black;
+    
+}
+.heading{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 18%;
+}
+h6{
+    margin-left: 14px;
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+.input-box {
+    color: black;
+    width: 90%;
+    margin-bottom: 40px;
+    margin-left: 4%;
+}
+.text{
+    border-radius: 10px;
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+    padding: 4px 30px;
+    
+}
+.image{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.img{
+    background-image: url('../../assets/181038bd-8c82-4c2e-89c2-96afd3bae915.jpeg');
+    width: 200px;
+    height: 200px;
+    border-radius:50%; 
+    background-size: 100% 100%;
+    
+}
+.pen{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(43, 43, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 58%;
+    top: -80px;
+}
+.pen .fa-pen{
+    color: white;
+}
+.Gender{
+    border-radius: 10px;
+    height: 40px;
+    width: 90%;
+    font-size: 15px;
+    padding: 4px 30px;
+    margin-left: 4%;
+    margin-bottom: 35px;
+    background-color: white;
+}
+.btn{
+    border-radius: 50px;
+    padding: 20px;
+    width: 90%;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    margin-left: 4%;
+}
+.arrow{
+    size: 10px;
+}
