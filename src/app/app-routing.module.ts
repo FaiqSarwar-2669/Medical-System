@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'tab3',
     loadChildren: () => import('./tab3/tab3.module').then( m => m.Tab3PageModule)
   },
+  {
+    path: 'otp-screen',
+    loadChildren: () => import('./otp-screen/otp-screen.module').then( m => m.OtpScreenPageModule)
+  },
 
 ];
 
