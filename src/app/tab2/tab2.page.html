@@ -15,7 +15,9 @@
       </div>
     </div>
     <div class="image">
-      <div class="img"></div>
+      <div class="img">
+        <img [src]="frontimage ? frontimage : '../../assets/181038bd-8c82-4c2e-89c2-96afd3bae915.jpeg'" alt="User Image">
+      </div>
     </div>
     <div class="pen" (click)="open()">
       <i class="fa-solid fa-pen" ></i>

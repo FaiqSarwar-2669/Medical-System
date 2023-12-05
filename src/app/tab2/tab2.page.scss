@@ -43,12 +43,11 @@ h6{
     justify-content: center;
 }
 .img{
-    background-image: url('../../assets/181038bd-8c82-4c2e-89c2-96afd3bae915.jpeg');
     width: 200px;
     height: 200px;
     border-radius:50%; 
     background-size: 100% 100%;
-    
+    overflow: hidden;
 }
 .pen{
     width: 40px;
