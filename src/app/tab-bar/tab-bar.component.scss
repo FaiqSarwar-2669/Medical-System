@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main {
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+    background-color: #fff; 
+}
+  
+.main-tab {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.icon:hover{
+    counter-reset: blue;
+}

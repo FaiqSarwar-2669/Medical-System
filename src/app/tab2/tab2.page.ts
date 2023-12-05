@@ -29,26 +29,23 @@ export class Tab2Page implements OnInit {
     } else if (this.form.nickname.trim() === '') {
       this.services.presentToast('Enter Nick Name','danger')
     } else if (this.form.dateofbirth.trim() === '') {
-      this.services.presentToast('Enter Nick Name','danger')
-      console.log('Enter date of birth')
+      this.services.presentToast('Enter date of birth','danger')
     } else if (this.form.email.trim() === '') {
-      this.services.presentToast('Enter Nick Name','danger')
-      console.log('Enter email')
+     this.services.presentToast('Enter Email','danger')
     } else if (this.form.gender.trim() === '') {
-      this.services.presentToast('Enter Nick Name','danger')
-      console.log('Enter gender')
+      this.services.presentToast('Enter gender','danger')
     } else if (this.form.password.trim() === '') {
-      this.services.presentToast('Enter Nick Name','danger')
-      console.log('Enter Password')
+      this.services.presentToast('Enter Password','danger')
     } else if (this.form.confirmpassword.trim() === '') {
-      this.services.presentToast('Enter Nick Name','danger')
-      console.log('Enter confirm password')
-    } else if (this.form.password.trim() === this.form.confirmpassword.trim()) {
+      this.services.presentToast('Enter confirm password','danger')
+    }else if (this.form.password.trim() != this.form.confirmpassword.trim()){
+      this.services.presentToast('Password not match','danger')
+    }
+     else if (this.form.password.trim() === this.form.confirmpassword.trim()) {
       console.log(this.form)
     }
   }
   open = async () => {
-    console.log('helo')
     const image = await Camera.getPhoto({
       quality: 100,
       allowEditing: true,

@@ -21,12 +21,12 @@
     <div class="form">
       <div class="input-box">
         <ion-icon name="mail-outline" class="mail-icon"></ion-icon>
-        <input class="text" type="text" placeholder="Email" required>
+        <input class="text" type="text" placeholder="Email" required [(ngModel)]="textfield.email">
       </div>
       <div class="input-box">
         <ion-icon name="lock-closed-outline" class="lock-icon"></ion-icon>
-        <input class="text"  type="password" placeholder="password" required>
-        <ion-icon name="eye-off-outline" class="eye-icon"></ion-icon>
+        <input class="text" [type]="hide ? 'password' : 'text'" placeholder="Password" required [(ngModel)]="textfield.password">
+        <ion-icon name="eye-off-outline" class="eye-icon" (click)="showPassword()"></ion-icon>
       </div>
       <div>
         <label>
@@ -35,7 +35,7 @@
       </div>
     </div>
     <div>
-      <button class="btn">Sign In</button>
+      <button class="btn" (click)="signin()" >Sign In</button>
     </div>
     <div class="line">
       <hr>

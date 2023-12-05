@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'tab1',
     loadChildren: () => import('./tab1/tab1.module').then( m => m.Tab1PageModule)
   },
@@ -33,6 +34,14 @@ const routes: Routes = [
   {
     path: 'resetpassword',
     loadChildren: () => import('./resetpassword/resetpassword.module').then( m => m.ResetpasswordPageModule)
+  },
+  // {
+  //   path: 'tab-bar',
+  //   loadChildren: () => import('./tab-bar/tab-bar.component').then( m => m.TabBarComponent)
+  // },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
   },
 
 ];
