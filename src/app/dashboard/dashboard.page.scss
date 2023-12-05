@@ -1,0 +1,169 @@
+.image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    background-size: 100% 100%;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-part {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.part-1 {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin-left: 10px;
+}
+
+.slider-main {
+    width: 100%;
+    padding: 5px 15px;
+}
+
+.slider {
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(56, 56, 202);
+    background-size: 100% 100%;
+    animation: slidesanimation 20s linear infinite;
+    background-image: url('../../assets/doctor_1.jpg');
+}
+
+@keyframes slidesanimation {
+    0% {
+        background-image: url('../../assets/doctor_2.jpg');
+    }
+
+    20% {
+        background-image: url('../../assets/doctor_3.jpg');
+    }
+
+    40% {
+        background-image: url('../../assets/doctor_4.jpg');
+    }
+
+    60% {
+        background-image: url('../../assets/doctor_5.jpg');
+    }
+
+    80% {
+        background-image: url('../../assets/doctor_6.jpg');
+    }
+
+    100% {
+        background-image: url('../../assets/doctor_1.jpg');
+    }
+}
+
+.search {
+    padding: 5px 15px !important;
+}
+
+.search-input {
+    width: 100%;
+    height: 30px;
+    padding: 0px 30px !important;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: -1;
+    background-color: rgba(206, 206, 206, 0.671);
+}
+
+.search-icon {
+    font-size: 20px;
+    position: relative;
+    top: 37px;
+    left: 10px;
+}
+
+.filter {
+    font-size: 20px;
+    position: relative;
+    float: right;
+    top: -32px;
+    right: 10px;
+    color: rgb(75, 75, 199);
+}
+
+h3{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.main-tab-data{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.main-tab-data-1,
+.main-tab-data-2,
+.main-tab-data-3,
+.main-tab-data-4,
+.main-tab-data-5,
+.main-tab-data-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(185, 180, 180);
+    position: relative;
+}
+
+.main-tab-data-1 i,
+.main-tab-data-3 i,
+.main-tab-data-4 i,
+.main-tab-data-5 i,
+.main-tab-data-6 i,
+.main-tab-data-2 i{
+    font-size: 20px;
+    color: blue;
+}
+
+.main-tab-data-1::after{
+    content: 'General';
+    position: absolute;
+    top: 60px;
+}
+.main-tab-data-2::after{
+    content: 'Dentist';
+    position: absolute;
+    top: 60px;
+}
+.main-tab-data-3::after{
+    content: 'Ophthal..';
+    position: absolute;
+    top: 60px;
+}
+.main-tab-data-4::after{
+    content: 'Radiolo..';
+    position: absolute;
+    top: 60px;
+}
+.main-tab-data-5::after{
+    content: 'Neurolo..';
+    position: absolute;
+    top: 60px;
+}
+.main-tab-data-6::after{
+    content: 'More';
+    position: absolute;
+    top: 60px;
+}

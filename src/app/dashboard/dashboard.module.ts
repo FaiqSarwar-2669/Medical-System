@@ -14,8 +14,7 @@ import { TabBarComponent } from '../tab-bar/tab-bar.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    DashboardPageRoutingModule,
-    TabBarComponent
+    DashboardPageRoutingModule
   ],
   declarations: [DashboardPage,TabBarComponent]
 })
