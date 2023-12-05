@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
+import { Service } from '../service';
 
 @Component({
   selector: 'app-tab2',
@@ -18,24 +19,29 @@ export class Tab2Page implements OnInit {
     'image': '',
   }
   frontimage:any
-  constructor() { }
+  constructor(private services:Service) { }
 
   ngOnInit() {
   }
   signup() {
     if (this.form.fullname.trim() === '') {
-      console.log('Enter Full Name')
+      this.services.presentToast('Enter Full Name','danger')
     } else if (this.form.nickname.trim() === '') {
-      console.log('Enter Nick Name')
+      this.services.presentToast('Enter Nick Name','danger')
     } else if (this.form.dateofbirth.trim() === '') {
+      this.services.presentToast('Enter Nick Name','danger')
       console.log('Enter date of birth')
     } else if (this.form.email.trim() === '') {
+      this.services.presentToast('Enter Nick Name','danger')
       console.log('Enter email')
     } else if (this.form.gender.trim() === '') {
+      this.services.presentToast('Enter Nick Name','danger')
       console.log('Enter gender')
     } else if (this.form.password.trim() === '') {
+      this.services.presentToast('Enter Nick Name','danger')
       console.log('Enter Password')
     } else if (this.form.confirmpassword.trim() === '') {
+      this.services.presentToast('Enter Nick Name','danger')
       console.log('Enter confirm password')
     } else if (this.form.password.trim() === this.form.confirmpassword.trim()) {
       console.log(this.form)
