@@ -1,3 +1,7 @@
+.main {
+    overflow-y: scroll;
+}
+
 .image {
     border-radius: 50%;
     width: 60px;
@@ -99,16 +103,17 @@
     color: rgb(75, 75, 199);
 }
 
-h3{
+h3 {
     margin-left: 15px;
     font-weight: bold;
 }
 
-.main-tab-data{
+.main-tab-data {
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    margin-bottom: 30px;
 }
 
 .main-tab-data-1,
@@ -116,7 +121,9 @@ h3{
 .main-tab-data-3,
 .main-tab-data-4,
 .main-tab-data-5,
-.main-tab-data-6{
+.main-tab-data-7,
+.main-tab-data-8,
+.main-tab-data-6 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,38 +139,79 @@ h3{
 .main-tab-data-4 i,
 .main-tab-data-5 i,
 .main-tab-data-6 i,
-.main-tab-data-2 i{
+.main-tab-data-7 i,
+.main-tab-data-8 i,
+.main-tab-data-2 i {
     font-size: 20px;
     color: blue;
 }
 
-.main-tab-data-1::after{
+.main-tab-data-1::after {
     content: 'General';
     position: absolute;
     top: 60px;
 }
-.main-tab-data-2::after{
+
+.main-tab-data-2::after {
     content: 'Dentist';
     position: absolute;
     top: 60px;
 }
-.main-tab-data-3::after{
+
+.main-tab-data-3::after {
     content: 'Ophthal..';
     position: absolute;
     top: 60px;
 }
-.main-tab-data-4::after{
+
+.main-tab-data-4::after {
     content: 'Radiolo..';
     position: absolute;
     top: 60px;
 }
-.main-tab-data-5::after{
+
+.main-tab-data-5::after {
     content: 'Neurolo..';
     position: absolute;
     top: 60px;
 }
-.main-tab-data-6::after{
+
+.main-tab-data-6::after {
     content: 'More';
     position: absolute;
     top: 60px;
+}
+
+.main-tab-data-7::after {
+    content: 'pediatric';
+    position: absolute;
+    top: 60px;
+}
+
+.main-tab-data-8::after {
+    content: 'Nutrition';
+    position: absolute;
+    top: 60px;
+}
+
+.top-doctor-series-1,
+.top-doctor-series-2 {
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 2px solid blue;
+}
+
+.top-doctrot-series{
+    padding: 15px;
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    gap: 20px;
+    cursor: pointer;
+}
+.top-doctor-series-1:hover,
+.top-doctor-series-2:hover{
+   color: white;
+   background-color: blue;
 }
