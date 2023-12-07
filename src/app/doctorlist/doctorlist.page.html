@@ -1,13 +1,148 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>doctorlist</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">doctorlist</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="color" [style.background-color]="isFilterClicked ? 'transparent' : 'rgba(0, 0, 0, 0.5)'" >
+    <div class="heading">
+      <div class="back-error">
+        <ion-icon name="arrow-back-outline" class="arrow"></ion-icon>
+      </div>
+      <div class="search">
+        <ion-icon name="search-outline" class="search-icon"></ion-icon>
+        <ion-input type="text" placeholder="search" class="search-input"></ion-input>
+        <ion-icon name="options-outline" class="filter" (click)="filter($event)"></ion-icon>
+      </div>
+    </div>
+    <div class="filter-tab" [class.visible]="isBottom">
+      <div class="filter-tab-part-1">
+        <div class="line1">
+          <div class="line-div1"></div>
+        </div>
+        <div class="filter-content">
+          <ion-label>Filter</ion-label>
+        </div>
+        <div class="divider">
+          <div class="line">
+            <div class="line-div"></div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-tab-part-2">
+        <h4>Specialtiy</h4>
+        <div class="top-doctrot-series">
+          <div class="top-doctor-series-1">
+            <ion-label>All</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>General</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Dentist</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Nutrition</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Pediatric</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Neurologist</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Radiologist</ion-label>
+          </div>
+        </div>
+        <h4>Rating</h4>
+        <div class="top-doctrot-series">
+          <div class="top-doctor-series-1">
+            <ion-label>All</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>General</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Dentist</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Nutrition</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Pediatric</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Neurologist</ion-label>
+          </div>
+          <div class="top-doctor-series-2">
+            <ion-label>Radiologist</ion-label>
+          </div>
+        </div>
+        <div class="divider">
+          <div class="line">
+            <div class="line-div"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="reset">Reset</button>
+          <button class="apply">Apply</button>
+        </div>
+      </div>
+    </div>
+    <div class="top-doctrot-series">
+      <div class="top-doctor-series-1">
+        <ion-label>All</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>General</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>Dentist</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>Nutrition</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>Pediatric</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>Neurologist</ion-label>
+      </div>
+      <div class="top-doctor-series-2">
+        <ion-label>Radiologist</ion-label>
+      </div>
+    </div>
+    <div class="total-doctor">
+      <div>
+        <ion-label class="total-number-of-doctors">450 fonund</ion-label>
+      </div>
+      <div>
+        <ion-label class="Default">Default <ion-icon name="swap-vertical-outline"
+            class="swap-vertical"></ion-icon></ion-label>
+      </div>
+    </div>
+    <div class="doctor-list">
+      <div class="doctor-main-part" *ngFor="let item of [1,2,3,4,5,6,7]">
+        <div class="doctor-image">
+          <!-- <img src="../../assets/doctor_5.jpg" alt=""> -->
+        </div>
+        <div class="doctor-information">
+          <div class="doctor-information-line-1">
+            <h5>Dr. Faiq Sarwar</h5>
+            <ion-icon name="heart-outline" class="heart"></ion-icon>
+          </div>
+          <div class="doctor-information-line-2">
+            <div class="line">
+              <div class="line-div"></div>
+            </div>
+          </div>
+          <div class="doctor-information-line-3">
+            <ion-label class="doctor-quality">Neurologist</ion-label>
+            <ion-label>|</ion-label>
+            <ion-label class="doctor-quality">Quaid-e-Azam Hospital</ion-label>
+          </div>
+          <div class="doctor-information-line-4">
+            <ion-icon name="star-half-outline"></ion-icon>
+            <ion-label class="rating">4.4</ion-label>
+            <ion-label class="rating">(4,400 reviews)</ion-label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </ion-content>
