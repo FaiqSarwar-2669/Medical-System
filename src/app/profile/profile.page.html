@@ -1,0 +1,75 @@
+<ion-content [fullscreen]="true">
+  <div class="main">
+    <div class="heading">
+      <div>
+        <ion-icon name="arrow-back-outline" class="arrow"></ion-icon>
+      </div>
+      <div>
+        <h6>Profile</h6>
+      </div>
+    </div>
+    <div class="image">
+      <div class="img">
+        <img [src]="frontimage ? frontimage : '../../assets/181038bd-8c82-4c2e-89c2-96afd3bae915.jpeg'"
+          alt="User Image">
+      </div>
+    </div>
+    <div class="pen" (click)="open()">
+      <i class="fa-solid fa-pen"></i>
+    </div>
+  </div>
+  <div class="some-personal-information">
+    <label>Faiq Sarwar</label>
+    <label>03xxxxxxxxx</label>
+  </div>
+
+  <div class="other-setting">
+    <div class="line-outside">
+      <div class="line">
+        <div class="line-bar"></div>
+      </div>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="person-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Edit Profile</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="notifications-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Notification</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="wallet-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Payment</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="shield-checkmark-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Security</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="eye-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Dark Mode</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="alert-circle-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Help Center</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="people-circle-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Invite Friends</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+    <div class="edit-profile">
+      <ion-icon name="log-out-outline" class="icon-setting-1"></ion-icon>
+      <ion-label class="setting-label">Log Out</ion-label>
+      <ion-icon name="chevron-forward-outline" class="icon-setting"></ion-icon>
+    </div>
+  </div>
+
+
+</ion-content>
